@@ -1,0 +1,37 @@
+
+                <main class="works">
+                    <div class="main-page">
+                        <div class="main-back">
+                         <div class="main-pic">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHdo5p-cw6HfcIwaRmW3qQIZdDDZ4IfeYjyaFP6IcCn7NTMCBuSW-ZFR0_IC79Sl4y3I8-Tvu31syrnNW4mkxN3_xH_1ml9epEASPCTI8a8T4Fud7LAewdOMb9dFnrjaqWJLMg1dLgdaUlu0zKNfFUPA=w2750-h1630-s-no?authuser=0" alt="">
+                         </div>
+                        </div>
+                        <div class="ttl-wrap">
+                            <h1>WORKS
+                                <br><span>作品</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="main-works-wrapper">
+                        <h2>作品を見る
+                            <br><span class="p-e">works</span>
+                        </h2>
+                        <div clas="works-contents">
+                            <ul class="i-list">
+                                
+                                  <% @works.each do |work| %>
+                                  <li>
+                                    <img width="300" height="300" src="/images/<%= work['img_path'] %>" >
+                                    <p class="ttl"><%= work['title'] %></p>
+                                  </li>
+                                  <% end %>    
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+
+
+
+
+
+

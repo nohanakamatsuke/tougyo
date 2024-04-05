@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>陶芸作家 佐藤東魚 公式サイト</title>
+        <link rel="stylesheet" href="/css/stylesheet.css">
+        <link rel="stylesheet" href="/css/stylesheet.exhibition.css">
+        <link rel="stylesheet" href="/css/stylesheet.artist.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    </head>
+    <body class="home blog">
+        <nav class="header">
+            <div class="header-wrap"> 
+                <div class="header-logo"> 
+                    <a href="/toppage">佐藤東魚</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/artist_page">ARTIST</a></li>
+                    <li><a href="/works_page">WORKS</a></li>
+                    <li><a href="/exhibition_page">EXHIBITION</a></li>
+                    <li><a href="/contact_page">CONTACT</a></li>
+                    <li><a href="https://www.instagram.com/tougeinoyakata" target="_blank"> <i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a href="https://ameblo.jp/tougyo/" target="_blank">blog</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+
+                <%= yield %>
+
+                <% if @contact.nil? %> 
+                <footer class="footer">
+                    <section class="linksection">
+                        <div class="column-one">
+                            <a href="/works_page">
+                                <div class="figure">
+                                    <img src="https://lh3.googleusercontent.com/pw/ADCreHel78qpZMyWu9JmAXthcLMBBjMc9PCttjJAbtePk4impoleDxzkEWzhofQL_pV9hH5rzpidxQ1XSCKVGcZIKHAK1mZ2cR2g03cOTzXgxiPKP1ITKtC-qVroNF-fWYuLrdCNdVCe0WQdReE5MuBiVIy_=w2598-h1432-s-no?authuser=0" alt="">
+                                </div>
+                                <h4>
+                                    WORKS <br>
+                                    <span>作品を見る</span>
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="flex-column">
+                         <div class="column-two">
+                             <a href="/artist_page">
+                                 <div class="figure">
+                                     <img src="https://lh3.googleusercontent.com/pw/ADCreHeWvvruZhgTj7XjOZ4mKplMXOSUJ3WiqLapBmn3dPImy3DgvZ0yHSMWmi31W2dvG6tVLgDCuDI2MnBecoBtPK-oULmP8nXHIadzFkigkHNQsxZ5-sSwCTqWweoZjat42tyPcUE1T6q9bvb1P6c4wiXt=w2446-h1493-s-no?authuser=0" alt="">
+                                 </div>
+                                 <h4>
+                                     ARTIST <br>
+                                     <span>作者について</span>
+                                 </h4>
+                             </a>
+                         </div>
+                         <div class="column-three">
+                             <a href="/exhibition_page">
+                                 <div class="figure">
+                                     <img src="https://lh3.googleusercontent.com/pw/ADCreHdkgs3wQNTxsMmxqawP_WuQjwgqH0dz1EIbOHdG4f6OpoLN5rtgPNTD_C9nEevxzi9MkC0IPnNHRWlPimOOWtsKkZ270ZG9Mr2iv71js16XQSAzyzjEf8yT28ZlS47JW05ybe5uN7ruNeA7qUM2GTgs=w1170-h1210-s-no?authuser=0" alt="">
+                                 </div>
+                                 <h4>
+                                     EXHIBITION <br>
+                                     <span>出展情報</span>
+                                 </h4>
+                             </a>
+                         </div> 
+                        </div>
+                    </section>
+                    <section class="contactsection">
+                        <div class="sitecontact">
+                          <a href="contact_page" target="_blank">
+                            CONTACT
+                            <br><span>お問い合わせはこちら</span>
+                          </a>
+                        </div>
+                       <div class="snscontact">
+                        <a href="https://www.instagram.com/tougeinoyakata" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x">
+                            </i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://ameblo.jp/tougyo/">
+                            Blog
+                        </a>
+
+                       </div>
+                    </section>
+                </footer>
+                <% end %>
+        <script src="/js/script.js"></script>        
+    </body>
+</html>

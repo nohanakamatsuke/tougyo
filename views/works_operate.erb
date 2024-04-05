@@ -1,0 +1,42 @@
+
+<div class="works_header">
+    <div class="works_head_title">
+      <h1>WORKS</h1>
+    </div>
+
+    <form action="/works_operate_new" method="post" enctype="multipart/form-data" class="works_contents_new">
+        <input class="works_contents_new_img" type="file" name="img">
+
+        <label class="works_contents_new_title" for="title">タイトル:
+          <input type="text" name="title">
+        </label>
+            <input class="works_contents_new_submit" type="submit" value="新規投稿">
+    </form>
+</div>
+
+
+<div class="works_contents_edit">
+     <div clas="works-contents">
+       <ul class="i-content">
+            <%  @contents.each do |content| %>
+                <li>
+                    <div class="works-contents-wrapper">
+                      <img width="300" height="300" src="/images/<%= content['img_path'] %>" alt="">
+                      <form action="/operate_works_edit" method="post" enctype="multipart/form-data">
+                        <div class="works-contents-title-wrapper">
+                         <div>
+                          <input type="file" class="works-contents-img-edit" name="file">
+                         </div> 
+                          <input type="hidden" value="<%= content['id'] %>" name="content_id">
+                          <input type="text" value="<%= content['title'] %>" name="title">
+                        </div>
+                        <input class="works-contents-btn" type="submit" value="変更">
+                      </form>
+                    </div>  
+                </li>
+            <%  end  %>
+            
+        </ul>
+     </div>
+</div>
+

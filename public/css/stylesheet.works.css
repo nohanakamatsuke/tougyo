@@ -1,0 +1,58 @@
+
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: #464e54;
+    text-decoration: none;
+}
+
+.main-content{
+    position: relative;
+}
+
+/* works main//////// */
+
+/* /////////////////////////// */
+/* Works list */
+
+.main-works-wrapper h2  {
+    display: block;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #aaa;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    
+} 
+
+.main-works-wrapper {
+    padding-top: 150px;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+    width: 88%;
+}
+
+/* コンテンツ */
+
+.i-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+}
+
+.i-list img {
+    object-fit: cover;
+} 
+
+
+

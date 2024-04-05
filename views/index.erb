@@ -1,0 +1,36 @@
+
+                <main>
+                    <div class="top-page">
+                        <img src="/images/ttt.jpeg" alt="top-page">
+                    </div>
+                    <div class="main-content">
+                        <section class="infosection">
+                            <div class="inner">
+                                <h2>INFOMATION</h2>
+                                <div class="infosection-wrap">
+                                    <h3>EXHIBITION<span>出展情報</span></h3>
+                                    <div class="infosection-content">
+                                          <% @exhibition2024.each do |exhibition2024| %>
+                                           <div class="infosection-content-item">
+                                             <div class="infosection-content-img">
+                                                <img  class="obachan" src="/images/<%= exhibition2024['img_path'] %>" alt="">
+                                             </div>    
+                                                <time>
+                                                    <%= exhibition2024['created_at'] %>
+                                                </time>
+                                                <h4><%= exhibition2024['title'] %></h4>
+                                           </div>      
+                                          <% end %>
+                                    </div>      
+                                    <a href="/exhibition_page" class="btn-more">
+                                         more
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+                
+    </body>
+</html>

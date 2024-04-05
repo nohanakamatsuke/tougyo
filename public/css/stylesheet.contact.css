@@ -1,0 +1,76 @@
+/* コンタクトFOAM */
+
+.contact {
+    width: 88%;
+    max-width: 900px;
+    margin: 150px auto;
+}
+
+.contact-ttl h2 {
+    font-family: serif;
+    font-size: 28px;
+    color: #000041;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #464e54;
+}
+
+.contact-ttl h2 span {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+}
+
+
+.contact-p-e {
+    font-size: 12px;
+    color: #b5b5b5;
+    
+}
+
+.contactform {
+    width: 90%;
+    margin: 40px auto 0 ;
+    background-color: #eee;
+    padding: 5% 5% 2.5%;
+    border-radius: 5px;
+}
+
+.formtype {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #b5b5b5;
+}
+
+.in-form-submit {
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.form-submit{
+    background-color: #555;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 16px;
+    height: 80px;
+    
+}
+
+.form-submit:hover {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+/* @media screen and (max-width: 1183px){
+    .header-wrap{
+        position: static;
+    }
+} */

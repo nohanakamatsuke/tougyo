@@ -1,0 +1,50 @@
+
+                <main>
+                    <div class="main-page">
+                        <div class="main-back">
+                            <div class="main-pic">
+                                <img src="/images/IMG_5760.jpg" alt="">
+                            </div>
+                            <div class="ttl-wrap">
+                                <h1>出展情報
+                                    <br><span>Exhibition</span>
+                                </h1>
+                        </div>
+                    </div>
+                    <div class="main-exhibition-wrapper">
+                        <div class="main-exhibition-contents">
+                            <section class="event-contents">
+                             <h2>2024 <span> 出展情報</span></h2>
+                             <ul class="i-list">
+                             <% if @exhibition2024 != nil %>
+                                <% @exhibition2024.each do |exhibition2024| %>
+                                 <li>
+                                     <a href="">
+                                         <img width="400" height="300" src="/images/<%= exhibition2024['img_path'] %>" alt="">
+                                         <time><%= exhibition2024['created_at'] %></time>
+                                         <p class="eventlist-ttl"><%= exhibition2024['title'] %></p>
+                                 </li>
+                                <% end %> 
+                             <% end %>   
+                             </ul>
+                            </section>
+                            <section class="event-contents">
+                              <h2>2023</h2>
+                              <ul class="i-list">
+                              <% if @exhibition2023 != nil %>
+                                <% @exhibition2023.each do |exhibition2023| %>                                          
+                                  <li>
+                                        <a href="">
+                                            <img width="400" height="300" src="/images/<%= exhibition2023['img_path'] %>" alt="">
+                                            <time><%= exhibition2023['created_at'] %></time>
+                                            <p class="eventlist-ttl"><%= exhibition2023['title'] %></p>
+                                  </li>
+                                <% end %>   
+                              <% end %>  
+                              </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                </main>
+                

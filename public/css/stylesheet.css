@@ -1,0 +1,523 @@
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #464e54;
+    text-decoration: none;
+}
+
+.p-e {
+    font-size: 12px;
+    color: #b5b5b5;
+    letter-spacing: 1px;
+    margin-left: 0.5em;
+}
+
+.header{
+    position: fixed;
+    z-index: 999;
+}
+.header-logo{
+    font-family: serif;
+    color: navy;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.header-wrap{
+    background-color: rgba(248, 250, 250, 0.95);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    z-index: 20;
+    padding-right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-links li{
+    padding: 0 29px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium';
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+.nav-links li:hover {
+    border-bottom: 0.5px solid black;
+    
+}
+
+.rule{
+    font-size: 20px;
+}
+
+.main-content{
+    position: relative;
+}
+/* ハンバーガーメニュー */
+
+.burger{
+    cursor: pointer;
+    display: none;
+    margin-right: 6%;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: navy;
+    margin: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* 見出し */
+
+.top-page{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.top-page img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-content{
+    margin-top: 70px;
+    /* margin: 0 auto; */
+}
+
+
+/* インフォセクション */
+
+.infosection-wrap {
+    position: relative;
+    
+}
+
+.infosection .inner h2 {
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.infosection .inner{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+   
+.infosection .inner .infosection-wrap h3 {
+    letter-spacing: 1px;
+    border-left: 3px solid #464e54;
+    padding-left: 5px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.infosection .inner .infosection-wrap h3 span{
+    padding-left: 10px;
+    font-size: 13px;
+    font-family: "serif";
+    color: #464e54;
+}
+
+
+
+.infosection-content{
+    display: flex;
+    gap: 40px;
+    overflow: scroll;
+    
+    
+}
+
+.infosection-content::-webkit-scrollbar {
+    display:none;
+   }
+   
+.infosection-content-img{
+    position: relative;
+}
+
+.infosection-content-img img {
+    margin-top: 20px;
+    width: 405px;
+    height: 220px;
+    object-fit: cover;
+   
+}
+
+.infosection .inner .infosection-wrap .infosection-content .infosection-content-item time {
+    display: block;
+    font-family: initial;
+    margin: 12px 12px 0 0;
+    line-height: 1;
+    color: #888;
+}
+
+.infosection .inner .infosection-wrap .infosection-content .infosection-content-item h4 {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+
+/* ボタン */
+ 
+a.btn-more {
+    display: block;
+    position: absolute;
+    top: 0;
+    right:0%;
+    background: #eee;
+    font-family: "abel";
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    width: 70px;
+    border-radius: 3px;
+    padding: 6px 12px;
+    transition: 0.5s;
+}
+
+
+a.btn-more::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: #464e54;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    transition: 0.5s;
+}
+a.btn-more::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    background: #464e54;
+    transform: rotate(30deg);
+    right: 12px;
+    top: 12px;
+    transition: 0.5s;
+}
+
+
+a.btn-more:hover::after{ 
+    background: white;
+    transition: 0.5s;
+}
+
+
+a.btn-more:hover::before {
+    width: 29px;
+    background: white;
+    transition: 0.5s;
+}
+
+a.btn-more:hover {
+    background-color: #464e54;
+    color:white;
+    transition: 0.8s;
+}
+   
+
+/* 　フッターセクション */
+
+
+
+footer {
+    padding-top: 150px;
+}
+
+.linksection{
+    width: 88%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.linksection a {
+    position: relative;
+}
+/* link section の文字 */
+.linksection a h4 {
+    padding: 5px 0;
+    width: 180px;
+    font-size: 24px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    border: 1px solid #fff;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: Geneva;
+}
+
+.linksection a h4 span{
+    font-weight: normal;
+    font-size: 12px;
+    margin: auto;
+}
+
+.figure {
+    height: 220px;
+    position: relative;
+    margin: auto;
+}
+
+.column-one .figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top -50px left 0;
+}
+
+.column-two .figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.column-three .figure img {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-column{
+    margin: 0 auto;
+    display: flex ;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    justify-content: space-between ;
+}
+
+.flex-column .figure {
+    width: 600px; 
+}
+
+
+/* お問い合わせ */
+
+.contactsection{
+   width: 88%;
+   margin: 100px auto;
+   max-width: 1300px;
+}
+
+.contactsection .sitecontact a {
+    
+    display: block;
+    background-color:#000041;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-family: "abel";
+    padding: 30px 0;
+    transition: 0.5s;
+    line-height: 40px;
+}
+.contactsection .sitecontact a:hover {
+    background-color: #23237b;
+}
+
+.contactsection .sitecontact span{
+    font-size: 18px; 
+}
+
+/* SNS */
+
+
+
+.snscontact{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+
+.snscontact i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.snscontact a {
+    border: 1px solid #000041;
+    border-radius: 5px;
+    display: block;
+    width: 30%;
+    color: #000041;
+    font-family: "Abel";
+    font-size: 15px;
+    padding: 17px 0;
+    transition: 0.4s;
+}
+
+.snscontact a:hover{
+    background-color: #f0f0f0;
+    transition: 0.4s;
+}
+
+.nav-active{
+    transform: translateX(0%) !important;
+}
+
+@media screen and (max-width: 1367px){
+    .flex-column{
+        display: block;
+    }
+
+    .flex-column .figure{
+        width: 100%;
+    }
+
+    .flex-column .column-three{
+        margin-top: 50px;
+    }
+
+    .column-one .figure img {
+        object-position: top 0 left 0;
+    }
+}
+
+@media screen and (max-width: 1183px){
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92.5vh;
+        top: 7.5vh;
+        background-color: #23237b;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-top: 0;
+        transform: translateX(100%);
+        justify-content: space-around;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links a{
+        color: white;
+    }
+    .nav-links li:hover {
+        border-bottom: 0.3px solid white;
+    }
+    .header-wrap{
+        height: 7.5vh;
+    }
+    .burger{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+    .top-page{
+        height: auto;        
+    }
+    .top-page img{
+        margin-top: 3vh;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 440px){
+
+    .header-logo{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .header-wrap{
+        height: 7vh;
+    }
+    .nav-links{
+        padding: 0 20px;
+        right: 0;
+        height: 95vh;
+        top: 7vh;
+        width: 30%;
+    }
+    .nav-links li{
+        font-size: 13px;
+        padding: 0;
+    }
+    .snscontact a span {
+        font-size: 0;
+    }
+
+    .snscontact i {
+        margin: 0 auto;
+        font-size: 23px;
+    }
+    .burger{
+        transform: scale(0.7);
+    }
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color: navy;
+        margin: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+@keyframes navLinksFade {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(405deg) translate(-5px, -6px);
+}
+
+
+
+

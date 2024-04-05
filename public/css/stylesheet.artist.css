@@ -1,0 +1,137 @@
+
+
+/* main///*/
+.main-back {
+    width: 100%;
+    max-width: 1800px;
+    background-color: #000041;
+    margin: 0 auto;
+ }
+
+.artist-main-pic {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.artist-main-pic img {
+    object-fit: contain;
+    height: 100vh;
+    margin-top: 80px;
+    overflow-x: hidden;
+}
+
+.artist-ttl-wrap{
+    top: 70%;
+}
+/* //// */
+
+.main-front-profile {
+    padding: 6% 0;
+    background: #f5f5f5;
+    display: flex;
+    margin: 150px 0;
+}
+
+.profile-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin: 0 auto;
+}
+
+.text-wrap h3 {
+    border-bottom: 1px dotted;
+}
+
+.profile-img {
+    width: 30%;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+.text-wrap {
+    width: 40%;
+}
+
+.text-wrap .awards h4 {
+    background: #ccc;
+    padding: 0.55em 0.7em;
+    display: inline-block;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+}
+
+@media screen and (max-width: 440px){
+    .artist-main-pic img{
+        margin-top: 7vh;
+    }
+} 
+
+@media screen and (max-width: 590px){
+    .main-back{
+        display: none;
+    }
+    .profile-wrap{
+        margin-top: 30px;
+    }
+} 
+
+@media screen and (max-width: 900px){
+    .profile-img {
+        width: 40%;
+    }
+    .main-front-profile {
+        margin: 150px 0;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .artist-main-pic img{
+        margin-top: 7.5vh;
+        height: auto;
+        position: relative;
+    }
+    .artist-main-pic{
+        position: static;
+    }
+    .artist-ttl-wrap{
+        position: absolute;
+        top: 40%;
+        height: 100px;
+        font-weight: 600;
+    }
+    .profile-wrap{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .main-front-profile{
+        margin: 0;
+        padding: 15% 0;
+    }
+    .main-front-profile .profile-wrap .profile-img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-front-profile .profile-wrap .text-wrap{
+        width: 100%;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .awards ul{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1183px){
+    .artist-main-pic img{
+        margin-top: 7.5vh;
+     }
+}
+

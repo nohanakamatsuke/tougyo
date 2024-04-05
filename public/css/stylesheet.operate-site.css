@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: aquamarine;
+    
+}
+
+.header-title{
+    
+    font-size: 25px;
+    margin: auto 40px;
+}
+
+.logout-btn{
+    margin: auto 30px;
+}
+
+.logout-btn input{
+    padding: 3px 9px;
+}
+
+.home-title{
+    padding-left: 50px;
+}
+
+.contents-operate-site{
+    padding: 50px;
+    display:flex;
+    gap: 30px;
+
+}
+
+.works-btn{
+    background-color: #c6d1da;
+    border: 2px solid #48525b;
+    height: 250px;
+    width: 300px;
+    
+}
+
+.exhibition-btn{
+    background-color: #c6d1da;
+    border: 2px solid #48525b ;
+    height: 250px;
+    width: 300px;
+    
+}
+
+.contents-operate-site p{
+    color: #48525b;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 65px;
+}
+

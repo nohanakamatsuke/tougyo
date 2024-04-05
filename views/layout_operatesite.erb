@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理者ページ</title>
+    <link rel="stylesheet" href="/css/stylesheet.works.css">
+    <link rel="stylesheet" href="/css/stylesheet.exhibition.css">
+    <link rel="stylesheet" href="/css/stylesheet.operate-site.css">
+    <link rel="stylesheet" href="/css/stylesheet.works-edit.css">
+    
+    
+</head>
+<body>
+<header class="header">
+    <div class="header-title">
+      <a href="/operate_site">管理者ページ</a>
+    </div>
+    <div class="logout-btn">
+      <form action="/logout" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="ログアウト">
+      </form>
+    </div>
+
+</header>
+    <%= yield %>
+</body>
+</html>
